@@ -53,7 +53,7 @@ export  const getStaticPaths = async() => {
 
   return {
 
-    fallback: false,//All Defined
+    fallback: 'blocking', // Dynamic
 
     paths: meetups.map( meetup => ( { 
 
